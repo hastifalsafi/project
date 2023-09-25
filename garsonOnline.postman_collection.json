@@ -1,0 +1,2604 @@
+{
+	"info": {
+		"_postman_id": "eac48e1a-8345-48d7-b6a2-204bf3b6c1a1",
+		"name": "garsonOnline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28720525"
+	},
+	"item": [
+		{
+			"name": "access",
+			"item": [
+				{
+					"name": "insert-permision",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18lmRfKRu0dozCFdEO2Ns6H0ld4JvfO/v6I9lCydRfGkqn5HT5LcpTpVkf2T/O4Gplc85PLptOZD3UJOz83M1chcmJj5T9RYEFejK8yQJPIaNcijyfhWcAmQnQm6hfU2srrLxsXb3Bb9p3s8tqRxyio5ci6Wka2OutR/7uHlXCy033g9wvOz+6yATcJBM+/iRKHrOolSoE4uyIuUt/yQK8PyFgA5dakxuYz9Jw1X9IZMCQCsoNQIynOWu9kfWluXxonIznL7GiQujDNcZpNzyWqsmP/eKIWqC2Lsq+cLNigVoVPWtHIcpgJgEsXkZT3HvF2X86R+/gQa9Lu5DmOca50onC+LbE0kXrR2qgiAzULdW9h15TilZHQt7flNfd7IDydKGWMa4/2p3KDsfYEmAv2z4VBqsVLrVnzivoKYGOJrvSHfiLgxoaPY/XCYxJPh3OZE6Y3401+YFAeJysFK7z5/1bWyaSGCV5EbnScdsxmvNjg23JWO65csJYYj1wMgTtTyi5GM0D29SjnLGtKRrGwn+anAdFXDTOqIlPDV5PZgiW0Fd70Xb9zHcaiBg2WQPo/C+LA/riLDN7ak5FUP9KBbl4iFi716tXXDWnAns0gR4YN9I+zTxA9FO+kxVR3/rHdt2uKoypWfPEa7vXDUCuNyJFvX9macdmfcfgpePW1HGmvbIPg1BuKkGBJEgc2aqjYN9FGR7WTkd8AuYf6u8TbnekLRqwLFVsmKJdubHR6eE3muNtl9iIWNmauWsCAj4on12805UXVnA==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"mohsenn\",\r\n    \"label\": \"محسن\",\r\n    \"urls\": \"digitalorder.ir\"\r\n      \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-permision",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-permision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-permision/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-permision/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-permision",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c7665ec2b29a57086895fc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-permision/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-permision/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-permision",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-permision",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-permision",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-permision"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categoey",
+			"item": [
+				{
+					"name": "insert-category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"faName\" : \"fastfood\",\r\n    \"sort\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api//v1/insert-category",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"",
+								"v1",
+								"insert-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-category/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api//v1/edit-category/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"",
+								"v1",
+								"edit-category",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-category-by-customer/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "get-category-by-customer/:id",
+							"host": [
+								"get-category-by-customer"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c7665ec2b29a57086895fc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-category-by-customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "get-all-category-by-customer",
+							"host": [
+								"get-all-category-by-customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-category-by-seller/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-category-by-seller/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-category-by-seller",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c7665ec2b29a57086895fc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-category-by-seller",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1/glelz2xasKP2PE9RR27o+dyAzFp4VDESR84ilKyaPYLkudM0YpDH/0TjKTGJia82WKO/sJ72gmBIp6Ke2LPEoEE4SB8qUl9B3Cx1Q2m82cPJcrnam801dq2CPXZ0mK0DooKDBAxt3GfwvoHSWOGSskkPfXoNqyPf6tfSLx0cyxdDmcxjrzoxOVuaMMxcd1uNmsbyczkT+GUTASC5Oqovm/pAhi1n9GgDR41tv6UeigFF0fI81gqbXcImfeuge6Uq6KVG4HrURqZD0EyynUpOAdW3wT/AfS5GBOHK/tjI063PQZt/Yk9yoZiemZADDQieRnVJUqCixtzwkj4NeGQAzwozQEFuCyy+SiybtkRUj0jxzM5XLLmr1t2QsqGK5chwubLDqAkl4n6LC8X5q1dlYog/wm3hKfvo9HxAKlKwjMMgLBcrbLGrNF6lfCKpiL7urBY0lAC1oO7zwADucEI7c16Y4Wh4ylqPqH7Ui1p6ke0Mo053XLBkGqLCAzJBhUGlJw8d+U8n9LixZPqkGpvX9/9EkDXdoErj6vCkTSg3uvO5Ak2KRPlx/hmAtC9H1TOHq7gpGgXTMBRWt1Jb4BQ+vIFudn7k293cOSbW32RndnHRSg+vmTfEaiiKqb3rkGRyBW75tIEIyf+5Kku5xvFGBXn3mNAVJhL5Xi7melBpD4ZRVg22GY8VZkSl7c9i3xxoxrOTqKywWII+B4BgqEsUklddhmAT3Co/Mb5sOfbYQpqB8iuC6DY4NQv+MaHMfSsM8u3TZBaBEug==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-category-by-seller",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-category-by-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-category/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/delete-category/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-category",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "discountCode",
+			"item": [
+				{
+					"name": "insert-code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "insert-code",
+							"host": [
+								"insert-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-code/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "delete-code/:id",
+							"host": [
+								"delete-code"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-code-id/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "get-code-id/:id",
+							"host": [
+								"get-code-id"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-code/:code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "get-code/:code",
+							"host": [
+								"get-code"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "get-all",
+							"host": [
+								"get-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-code-customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-code-customer",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-code-customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-code-customer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/change-activition/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"change-activition",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "file",
+			"item": [
+				{
+					"name": "upload-file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/upload-file",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"upload-file"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "invoice",
+			"item": [
+				{
+					"name": "insert-invoicing",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18nTgR3fddgDTGMrSyyLBa5NM+U4IBijq6jnZqVlt5Rf7+yRlZhjzvpMIK8STrspVEFbemfLQkJOzYkKIwMcS+h9cJu+OquEWrYaVuf5lNGSkHjAYOdzk+ec047XZ9x/nhpaw7kokL4bo/m3XZH1DrWm503qrqA4kuPDn9zHwBQIkyir6GbCnYNP5ZLUn8Jnknggy2xM/sShRD9wyuwRsM7XcfWFOP92lA8+tZQlce2CiXh9da9F/EiqqKfMgVakd9BmG7bl+Ce1RC4YH+mN+kxANOex8z8PqC0fC/9DRO8YFO6Tcfta2Ktygti014L/JVJIb+WWxIDNEB5cw5ncNt56w4fVT9FiZQquHw10Kb0xw4LDx9RgDgbI5QQIolIua7BBWfcINBn2P7Eq86N+4oLNplz9cMwqCElL6VvJtUbCsjamSqxGxfWQE4ymdydi2+M3xih1672OPoXcaySMuUTteLRNdkqYqt3/467f3jMCrgq8kuVAgR7jLU1wj+nBXrbejhKCUwtVpm4jNTDmtrbjqj5m2XN6PmF6d58NfBZjmkaE44Ox4fNJFVR7g79Z3WaNhhAfzrw8Z/EKX5s5lOJGrNLZWPJuYpM2vxWVQhULnBhtR6XQrF2cYIk5+16IgGNHunta5TYLUj2OJIBgsED0V6VD/p6IzTW7CxPImWpllUS9sKcjCEKWhqJHPULUhroQqUBvwX0HoXV/TyBhwIC9Wub606Gd8cP6OCaa0X3UEujhb0YqUmP9WreYjg684cFft8WZzfb2Q==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/insert-invoicing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"insert-invoicing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account-settlement/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/account-settlement/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account-settlement",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/search-invoices",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search-invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-invoices/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-invoices/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-invoices",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notificationsMembers",
+			"item": [
+				{
+					"name": "insert-notification-members",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fireBaseToken\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-notification-members",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-notification-members"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "insert-order-by-customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-order-by-customer",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-order-by-customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert-order-by-seller",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-order-by-seller",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-order-by-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-order/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-order/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-order",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change-table-order/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/change-table-order/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"change-table-order",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-customer-order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-customer-order",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-customer-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-customer-order/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-customer-order/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-customer-order",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-orders",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-status-orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-status-orders",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-status-orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "paymentGeteway",
+			"item": [
+				{
+					"name": "request-transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/request-transaction",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"request-transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyTransaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/verifyTransaction",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"verifyTransaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-in-user-transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/search-in-user-transactions",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search-in-user-transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-in-transactions-panel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/search-in-transactions-panel",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search-in-transactions-panel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-type-pay",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-type-pay",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-type-pay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-mode-trasaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-mode-trasaction",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-mode-trasaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-type-trasaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-type-trasaction",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-type-trasaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "place",
+			"item": [
+				{
+					"name": "get-all-state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-state",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-state-by-name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-state-by-name",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-state-by-name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-city-of-state/:state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-city-of-state/:state",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-city-of-state",
+								":state"
+							],
+							"variable": [
+								{
+									"key": "state",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-city-by-name/:state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-city-by-name/:state",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-city-by-name",
+								":state"
+							],
+							"variable": [
+								{
+									"key": "state",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "resturant",
+			"item": [
+				{
+					"name": "insert-resturant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18lmRfKRu0dozCFdEO2Ns6H0ld4JvfO/v6I9lCydRfGkqn5HT5LcpTpVkf2T/O4Gplc85PLptOZD3UJOz83M1chcmJj5T9RYEFejK8yQJPIaNcijyfhWcAmQnQm6hfU2srrLxsXb3Bb9p3s8tqRxyio5ci6Wka2OutR/7uHlXCy033g9wvOz+6yATcJBM+/iRKHrOolSoE4uyIuUt/yQK8PyFgA5dakxuYz9Jw1X9IZMCQCsoNQIynOWu9kfWluXxonIznL7GiQujDNcZpNzyWqsmP/eKIWqC2Lsq+cLNigVoVPWtHIcpgJgEsXkZT3HvF2X86R+/gQa9Lu5DmOca50onC+LbE0kXrR2qgiAzULdW9h15TilZHQt7flNfd7IDydKGWMa4/2p3KDsfYEmAv2z4VBqsVLrVnzivoKYGOJrvSHfiLgxoaPY/XCYxJPh3OZE6Y3401+YFAeJysFK7z5/1bWyaSGCV5EbnScdsxmvNjg23JWO65csJYYj1wMgTtTyi5GM0D29SjnLGtKRrGwn+anAdFXDTOqIlPDV5PZgiW0Fd70Xb9zHcaiBg2WQPo/C+LA/riLDN7ak5FUP9KBbl4iFi716tXXDWnAns0gR4YN9I+zTxA9FO+kxVR3/rHdt2uKoypWfPEa7vXDUCuNyJFvX9macdmfcfgpePW1HGmvbIPg1BuKkGBJEgc2aqjYN9FGR7WTkd8AuYf6u8TbnekLRqwLFVsmKJdubHR6eE3muNtl9iIWNmauWsCAj4on12805UXVnA==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"faName\" : \"10فود\",\r\n    \"enName\" : \"Food10\",\r\n    \"aboutUs\" : \"غذای بینهایت10 \",\r\n    \"woekHour\":{\r\n        \"saturday\":\"{am:{from:{type: Date},to:{type: Date}},pm:{from:{type: Date},to:{type: Date}}},//شنبه\",\r\n        \"sunday\":\"{am:{from:{type: Date},to:{type: Date}},pm:{from:{type: Date},to:{type: Date}}},//یکشنبه\",\r\n        \"monday\":\"{am:{from:{type: Date},to:{type: Date}},pm:{from:{type: Date},to:{type: Date}}},//دوشنبه\",\r\n        \"tuesday\":\"{am:{from:{type: Date},to:{type: Date}},pm:{from:{type: Date},to:{type: Date}}},//سه شنبه\",\r\n        \"wednesday\":\"{am:{from:{type: Date},to:{type: Date}},pm:{from:{type: Date},to:{type: Date}}},//چهارشنبه\",\r\n        \"thursday\":\"{am:{from:{type: Date},to:{type: Date}},pm:{from:{type: Date},to:{type: Date}}},//پنجشنبه\",\r\n        \"friday\":\"{am:{from:{type: Date},to:{type: Date}},pm:{from:{type: Date},to:{type: Date}}},//جمعه\"\r\n    },\r\n    \"contactInfo\":{\r\n        \"address\":\"esfahan10\",\r\n        \"mobile\": \"09130872346\",\r\n        \"fhone\":\"\",\r\n        \"whatsApp\": \"09813827346\",\r\n        \"instagram\": \"Food10\",\r\n        \"webSite\" : \"Food10.ir\",\r\n        \"location\":\"\",\r\n        \"state\":\"\",\r\n        \"city\":\"\"\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/garson/api/v1/insert-resturant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"garson",
+								"api",
+								"v1",
+								"insert-resturant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-resturant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+OIN4U1frQ+bT4btZenAayGpwDxfmUVpgnEWiZgFgvd/65laNZGjRRJGdLf+l+HWjafWgG4jS83BGiUMJ7h3wrh9pD5G5U9i4RtlROnTaRvR/Qu4us/2ZRVjlFHv/kfhT46TrNo12YVyrWH0D7MKo3rd/o/h92D176Im8dJUul12afgz+ruBb/SiarPq7fWveGpLniBsagrUCG94yc7253ieM8gTw3/aQWghWdK6y0HZ0eU+scI6007IMyTAHNEB/UHtf89ExBtJfQvFuZCxi9xQkLOBR9dW/d+aoqqP90wwk0qAFvEuGzmlmDyzwSyVqndjPSVtYDpZckbRW2atVKGRIfCgEIEnOeBFTmeuaAIVrR5PlTrBvoDTNk3PAvZQBzwucN5/Y2hNW85qF4MvtHVc1zApV7IYT/K/ZKuhxuSuOfFTXrJTi1KbH9AIH4ObMbAXISctzmzs+koGy1ZYfC08fd8N6i+vCDmu2ixWRm5Qi9foZOnhxtcKUZkVY0DgGKFZqg3JL/Pw7x7x2zyTdO6JqVk44lqVolqjrXHB3qHUAbSEr//JINoqZkLwdILpbwuoXlDKWaJx8v5X8mlHR8Rup1AWGn4xpKZBjcgIETp/9q0tfdjzp54LRnCDBh55dPHf5t9+HqzhQC0cL+5mb0v8pZc9BHkLvdvrjCA3rgcc8t5EwuDMT6bxhJgxNgmftwLc4cpeBi1qbeZP85n600eA0mZ5TdlAYpTPAUkA8vjEsv8Jr5t/ioDGj2+yyyMMWcK2c732eI1A==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-resturant",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-resturant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-resturant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-resturant",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-resturant"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "role",
+			"item": [
+				{
+					"name": "insert-role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18lmRfKRu0dozCFdEO2Ns6H0ld4JvfO/v6I9lCydRfGkqn5HT5LcpTpVkf2T/O4Gplc85PLptOZD3UJOz83M1chcmJj5T9RYEFejK8yQJPIaNcijyfhWcAmQnQm6hfU2srrLxsXb3Bb9p3s8tqRxyio5ci6Wka2OutR/7uHlXCy033g9wvOz+6yATcJBM+/iRKHrOolSoE4uyIuUt/yQK8PyFgA5dakxuYz9Jw1X9IZMCQCsoNQIynOWu9kfWluXxonIznL7GiQujDNcZpNzyWqsmP/eKIWqC2Lsq+cLNigVoVPWtHIcpgJgEsXkZT3HvF2X86R+/gQa9Lu5DmOca50onC+LbE0kXrR2qgiAzULdW9h15TilZHQt7flNfd7IDydKGWMa4/2p3KDsfYEmAv2z4VBqsVLrVnzivoKYGOJrvSHfiLgxoaPY/XCYxJPh3OZE6Y3401+YFAeJysFK7z5/1bWyaSGCV5EbnScdsxmvNjg23JWO65csJYYj1wMgTtTyi5GM0D29SjnLGtKRrGwn+anAdFXDTOqIlPDV5PZgiW0Fd70Xb9zHcaiBg2WQPo/C+LA/riLDN7ak5FUP9KBbl4iFi716tXXDWnAns0gR4YN9I+zTxA9FO+kxVR3/rHdt2uKoypWfPEa7vXDUCuNyJFvX9macdmfcfgpePW1HGmvbIPg1BuKkGBJEgc2aqjYN9FGR7WTkd8AuYf6u8TbnekLRqwLFVsmKJdubHR6eE3muNtl9iIWNmauWsCAj4on12805UXVnA==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": ,\r\n  \"label\": \"\",\r\n  \"desc\":\"\",\r\n  \"access\":\"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-role",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-role/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-role/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-role",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-role/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-role/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-role",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c612b617e725563ab611c8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-role",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-role/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/delete-role/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-role",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sendMessage",
+			"item": [
+				{
+					"name": "send-notif",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/send-notif",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"send-notif"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-sms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/send-sms",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"send-sms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "services",
+			"item": [
+				{
+					"name": "insert-services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"faName\":  \"\",\r\n  \"enName\": \"\",\r\n  \"description\": \"\" ,\r\n  \"history\": \"\",\r\n  \"mainPhoto\": \"\",\r\n  \"otherPhotos\": \"\",\r\n  \"price:\": \"\",\r\n  \"off\": \"\",\r\n  \"stock\": \"\" ,\r\n  \"category\": \"\",\r\n  \"sort\": \"\",\r\n  \"preparationTime\": \"\",\r\n  \"restTime\": \"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-services",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-services/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-services/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-services/:id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\" : \"64c4a4488ceae1faf78b4a1e\"}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-services/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-services",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/search-services",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search-services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-services-by-seller/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-services-by-seller/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-services-by-seller",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-services-by-seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/search-services-by-seller",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search-services-by-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-services/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/delete-services/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "setting",
+			"item": [
+				{
+					"name": "insert-settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-settings",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-settings",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-settings",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-settings",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-settings-id/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-settings-id/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-settings-id",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-settings-key/:key",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-settings-key/:key",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-settings-key",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "table",
+			"item": [
+				{
+					"name": "insert-table",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"number\": \"\",\r\n      \"name\":\"\",\r\n      \"capacity\" :\"\",\r\n      \"photos\":\"\",\r\n      \"status\":  \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-table?role-id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-table"
+							],
+							"query": [
+								{
+									"key": "role-id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-table/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-table/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-table",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-table/:id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-table/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-table",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c74c7bc2b29a57086895b8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-table",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-table-by-seller/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-table-by-seller/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-table-by-seller",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-table-by-seller",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-table-by-seller",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-table-by-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-status-table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-status-table",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-status-table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-table-by-number/:number",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-table-by-number/:number",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-table-by-number",
+								":number"
+							],
+							"variable": [
+								{
+									"key": "number",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-table/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/delete-table/:id",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-table",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "insert-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"mohsen\",\r\n    \"lastName\": \"erfani\",\r\n    \"userName\": \"admin\",\r\n    \"password\": \"admin1234\",\r\n    \"role\": \"64c5f53e17e725563ab611b8\",\r\n    \"mobile\": \"09130827346\",\r\n    \"photo\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-user",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-user/:userId",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/edit-user/:userId",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit-user",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-user/:userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+lNhACOb5G7+Gw/c36/9oqPGyORBW26482EBFl978J+cMN4lrwr1fECF1JvMS4cmp0/Sh6tTMnwn2Q5n6DG+Vg+rObcclItU1mkfhCU7JmI5bLkC46WuhY+xdF9E+517TSh4dX1XfxLWKa6yZUZbRzsa2byaIdk94vj/re2z6Mh4Dz11Ok/sqb0WzbNzmsEwoRFICmvRfs4RmEqu7/2bpoffUF8+85XF00r+TKAPcs9pq2RYHi14fJAyDG1ZlOqqtt+AqEhcoLH0Kb9IsSwXb4LQEyxY/NGVa9bxuZB9hJwdIEf4em9o0pLXcAAIRBdgsbn8bfoo0D/aejoLm9/IysuxMq7V4Ic+6fNGUkCJE/RWa9eqLPy4zx+VQCVMUR+3yjKkpPYxZHv7Q1CrbYaW6ty6nDvHTl7dO4tzmVbxBUt9qkvzMETwumNnX+4PPhK/2l00uuZvwdGyHHr2pE9HcFZITPPcPJc+vxGRTbjRWyEGBzFdFho4eCXqszRelRRTNnqkt1ONeg+kG/YkkDzm9w/zwqHySX8csXP2pyxMkCVvSPdXvWuJ6A4d+6gT3xPAS17cP0c6qjQ5xbFyVSCvfPsGzowuXr58ew3YAviK0Jkj4LANQjYhvV1LEwZwyJDgIsQxfFcozQzWJu8mZLpQhbJeKGCUsl3M37+VczB7KSGzLhtdV5B8zb1e2XZEHGaBKTuTQGtfSlDL6ZuRJQsQDVNWRCga2hy/Y16gkm2vwq2uppxKo4+Y5EmzUyyS2WXDNUQB4I6eHFUg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-user/:userId",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-user",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-my-profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+lNhACOb5G7+Gw/c36/9oqPGyORBW26482EBFl978J+cMN4lrwr1fECF1JvMS4cmp0/Sh6tTMnwn2Q5n6DG+Vg+rObcclItU1mkfhCU7JmI5bLkC46WuhY+xdF9E+517TSh4dX1XfxLWKa6yZUZbRzsa2byaIdk94vj/re2z6Mh4Dz11Ok/sqb0WzbNzmsEwoRFICmvRfs4RmEqu7/2bpoffUF8+85XF00r+TKAPcs9pq2RYHi14fJAyDG1ZlOqqtt+AqEhcoLH0Kb9IsSwXb4LQEyxY/NGVa9bxuZB9hJwdIEf4em9o0pLXcAAIRBdgsbn8bfoo0D/aejoLm9/IysuxMq7V4Ic+6fNGUkCJE/RWa9eqLPy4zx+VQCVMUR+3yjKkpPYxZHv7Q1CrbYaW6ty6nDvHTl7dO4tzmVbxBUt9qkvzMETwumNnX+4PPhK/2l00uuZvwdGyHHr2pE9HcFZITPPcPJc+vxGRTbjRWyEGBzFdFho4eCXqszRelRRTNnqkt1ONeg+kG/YkkDzm9w/zwqHySX8csXP2pyxMkCVvSPdXvWuJ6A4d+6gT3xPAS17cP0c6qjQ5xbFyVSCvfPsGzowuXr58ew3YAviK0Jkj4LANQjYhvV1LEwZwyJDgIsQxfFcozQzWJu8mZLpQhbJeKGCUsl3M37+VczB7KSGzLhtdV5B8zb1e2XZEHGaBKTuTQGtfSlDL6ZuRJQsQDVNWRCga2hy/Y16gkm2vwq2uppxKo4+Y5EmzUyyS2WXDNUQB4I6eHFUg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/insert-role",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insert-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-user/:userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18nTgR3fddgDTGMrSyyLBa5NM+U4IBijq6jnZqVlt5Rf7+yRlZhjzvpMIK8STrspVEFbemfLQkJOzYkKIwMcS+h9cJu+OquEWrYaVuf5lNGSkHjAYOdzk+ec047XZ9x/nhpaw7kokL4bo/m3XZH1DrWm503qrqA4kuPDn9zHwBQIkyir6GbCnYNP5ZLUn8Jnknggy2xM/sShRD9wyuwRsM7XcfWFOP92lA8+tZQlce2CiXh9da9F/EiqqKfMgVakd9BmG7bl+Ce1RC4YH+mN+kxANOex8z8PqC0fC/9DRO8YFO6Tcfta2Ktygti014L/JVJIb+WWxIDNEB5cw5ncNt56w4fVT9FiZQquHw10Kb0xw4LDx9RgDgbI5QQIolIua7BBWfcINBn2P7Eq86N+4oLNplz9cMwqCElL6VvJtUbCsjamSqxGxfWQE4ymdydi2+M3xih1672OPoXcaySMuUTteLRNdkqYqt3/467f3jMCrgq8kuVAgR7jLU1wj+nBXrbejhKCUwtVpm4jNTDmtrbjqj5m2XN6PmF6d58NfBZjmkaE44Ox4fNJFVR7g79Z3WaNhhAfzrw8Z/EKX5s5lOJGrNLZWPJuYpM2vxWVQhULnBhtR6XQrF2cYIk5+16IgGNHunta5TYLUj2OJIBgsED0V6VD/p6IzTW7CxPImWpllUS9sKcjCEKWhqJHPULUhroQqUBvwX0HoXV/TyBhwIC9Wub606Gd8cP6OCaa0X3UEujhb0YqUmP9WreYjg684cFft8WZzfb2Q==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"user-lkozocna\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/delete-user/:userId",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-user",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1/s/+LycbnUQ3IKs11FdntS/WZNWRXjELqLBewgBw0shMm30QtczmtslGxNro+Gu5i7BSGh2FZgn/Voob/csBDBavA9Y7NSfL716KvagdOZggMCJbig0Pxq1aRd7IGmMeNiJk5jlzTwQfQ5TJlATxrpGaibqmQweQ6iaXm0pd9dMIjIHawukKhSJKiSUCbza2C4mhJTN113P6wEWjh3l9ALetGgqVTEHOa5fX9hN6oTJiTi4FwncC0WnO8iZoCFL7EDs93UoPOiFtqxvkfkg+RkHYshDR4IsolEkL6ba+l5LXU2ltDlLehATTQotTr9rk6/7yOadR96coQ1ezzII7DzAM2YhFEnTP5JxN1lWMQ9bet/WS1+eXBXnB1P32H72U+2qDclTOaETLu4si4zEk1opRA8asrZYvN45ay/YRuY4k/fSwDQe334jMBdwK9s2x8/GAEwYlm7cX/iydGHz1I2RCo1jeNCtbs28RksdMgVwpV7jNJ4CADzr5Qml09ma0+ZdzsDH1lT3TDfA7PWm99mu/eAvORFmod+JF7KPdUGjRf4sb13IfolFNeDyLhKe51jfmnhuFNedpsNZV49AucTGwZUwYKzWp1mYZDmqeyxBusyfxklZb6yn9HXds8GpLvEM+iGjZ2Jz0FwwAWfaxdRmld9Ms9+Yyt51WcgbiELquVRQTHhCfAOl/UNgT93vfnNhsFeMn1IUKT9hDDMiYU79U0c6Pm5c3uPmXbZGpYeRMq/cvnrJbJAnmkaxgxukD0OzOFfG1WQDg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/get-all-user",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"get-all-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18t8XD/xoG2hi/0M7edTK5rgMpgRBA2KVAqyW/fEPYy7KerONzuuVwDVtE7psDnt/tAjVfnfkDov2oiSsVq8G1Ucg+/8Swr4d/H4Oq/3zBAj5AoXv+D0atY+8I+USCgbq9h0zvxqLoxK/YqFR2grYjOpopPNPRAd7GkvEBhrH78g1iGO9od84vauHg8FhcuUaykQ7mtlLxWzo97iT/nv2umK5Mv6OvzBtaWZJR56NsjmN5RpXs1GrNIoS7w3AdE89x8EBwttvfou1WWYL2qM+Q2OwyseePRjoS1g4qJ8cXzlNvg2c7+Hs2hj1jMFlrhjj08a7Ra6z20LrBwE3sQnApKTeBd41jlAevqe3Odby2s8b5SQD7PTx0Dr+3FhC2msaT0VX9TY1UEdIKxPFlFkTSp9sZzwuYtBmkgqiZFhr6DasiFbjT2Kx+iVAP4VfnX4+iIF22imnsyArcnBMdohstxGXn3hGTk4XPpkvqA/5NUAyAwijnlVDaPwIRBLaetWs4Oc3jlLAwIT19PD0McqBFHAgSxtb7IXKRIAwYnx3ucEG5ntHTqYT0LVSzxIGQUeUR3Aog+S/7IZ3w8E04kXNtvfWJruZQjtUOuIXB3sz/SlLqCHg8+O5wUyltngtZFRIU1B0tKknX/CoRiybH9qqyvs4IDi0+feXElESj3y41g2iU7HWBFx0zDrzLfcPkT3BARxmP6JXLgRd33hiUradZUN4J5HuUz5O5ZxvLfbJccTHmzf9tXdMh7QB1T1paW+BjtNO8Vt9Nxzw==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"caspian_oxin\",\r\n    \"password\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-refresh-token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ECzEm1kAnX+kHnidxJ9r73+7yzsHzc9kacITVHqGyJK4BggP59fUGkW5xh9CsMNBh+dXXlPlflBOejP6UKC6mwNtl9Y983WcJ8WANhIVy0pD5jftUYF6U8wy2JWWncDrTl7nuqBmK/gwQbHjxM8V0p3aSxYClu/2bi+iShYqC5QRQMDP5aGmTrybpooraDwAwfcIi8LcJz0L/cBtl0tGbuokd6KSLWS9vHffPCqhlF8umTsW4TA56iz5MebnTPbDjJjZj44sy8EKCQ+Kro73AVoq8LGtDRWOZU3q2oZOKeGz3/BhQEw6Kv69u7zD+Rsx4j+T5tLvN4FY5Z1eAXBjiU1J7xBGK/hmCgrZCx9F6daSKLI3PMbvefAU6CDQZiFpHpN+lkjRly7+Gq4ZPqftZlyZxnk7jZOh7RY8NGSM/JpN7kbE37j+e94pwI++pFHKQ2pCM8yYVEVe/XDDY+cUTk+oX6vpWNmCrIE/NSUVsHyqjB+JO4pYyOW/7FmKG+ZDuxDjMYR/M036NkUQC28OE9ZvAcxVFSa8ImiQ9vMHel9rFfxOE5pCaAz/wGXXTfRH/v2lonCIMaVustgeLi4Wtv772ASZvPngmWYi/6PvpOxdrzuxHnwQ6Y5wH2ybRNOCGl/qidhNw0QtDyTocmrzkblF46/jP10yobcuzLfZFNnbKFMIf48crREWN++RoZwzVUvEL74J947gZxNz1PiUsvJhz9CxC2YrvkfDB5NggERcXKcBUc7BaUkza6Q4QwKlbRcyUTvHGdg==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/create-refresh-token",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"create-refresh-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX19XZiV+KSEN/T/Q7U6nG2B6l0yUum4axhesQneZTkWaByQs4EgyFlPQKy4NK65PZNPswsZ9YKrN2n6MtOx0Gyscboywx816UsaXcb/eulqFQtsCCmirqt4qNqtQjbXQ8llcyw3YePzI2hNaSre25ht5oG6RmBe2oFTwHQruV8U7zDb9VZ243ycu070KFcAVA3XO8bS9U10Am1p8I46+MwSQzDVLa15aZOR4B+qRdqu0zv25u8NXB9RCIi0tGBuTMPFQp8qBaVUFmlSXPaAoXk2VEsP5SaST6b2BeTrDZuJZzOFgJflsULttBA5Y3WEvhCOfWy3Pu7Sz67Q9p1n60lqcQjhOT5dcuqPHqsv16OAyy1CsE40Xh/wi8Jx4NzcKiEBy4kjpKL4+LoPnbaXfvK0q2OVwYh+BNUNvoWrN1IhiKYNLia2GVSy49MPetknrWEHimVFr7NWo/8lWqwrZVuMy/uQ5VuqsIaoVE5yVKJbvMLG6+TkjhOYQNJwsh9sBXz8dwy+xKSdAWyWjuscRw812O0YWwHECc5qQ5jr9TeiYgi+r5ZrxGBSIaH+cwYXbDA9MNDo1g+DKNbb3o87DctIfqV8ibuebwckdCFdR/hEk4DqPrqehTt8IgbZuY7WmG9md3zR+LF9yhNt4jA0WBllVSJXS0SVUTaqSJIrMZ/rxrX26oQn1wTKMGG9gd6mq1ktrxX2R2gsuySqMBgQjCd+Rj0JfCpp3J/driV0hTFxso04PXdaM0Rbq2qtazBQClnink4KUwABSxw==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " \r\n{\r\n    \"userName\":\"caspian_oxin\",\r\n    \"passWord\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/logout",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-code-change-password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18nTgR3fddgDTGMrSyyLBa5NM+U4IBijq6jnZqVlt5Rf7+yRlZhjzvpMIK8STrspVEFbemfLQkJOzYkKIwMcS+h9cJu+OquEWrYaVuf5lNGSkHjAYOdzk+ec047XZ9x/nhpaw7kokL4bo/m3XZH1DrWm503qrqA4kuPDn9zHwBQIkyir6GbCnYNP5ZLUn8Jnknggy2xM/sShRD9wyuwRsM7XcfWFOP92lA8+tZQlce2CiXh9da9F/EiqqKfMgVakd9BmG7bl+Ce1RC4YH+mN+kxANOex8z8PqC0fC/9DRO8YFO6Tcfta2Ktygti014L/JVJIb+WWxIDNEB5cw5ncNt56w4fVT9FiZQquHw10Kb0xw4LDx9RgDgbI5QQIolIua7BBWfcINBn2P7Eq86N+4oLNplz9cMwqCElL6VvJtUbCsjamSqxGxfWQE4ymdydi2+M3xih1672OPoXcaySMuUTteLRNdkqYqt3/467f3jMCrgq8kuVAgR7jLU1wj+nBXrbejhKCUwtVpm4jNTDmtrbjqj5m2XN6PmF6d58NfBZjmkaE44Ox4fNJFVR7g79Z3WaNhhAfzrw8Z/EKX5s5lOJGrNLZWPJuYpM2vxWVQhULnBhtR6XQrF2cYIk5+16IgGNHunta5TYLUj2OJIBgsED0V6VD/p6IzTW7CxPImWpllUS9sKcjCEKWhqJHPULUhroQqUBvwX0HoXV/TyBhwIC9Wub606Gd8cP6OCaa0X3UEujhb0YqUmP9WreYjg684cFft8WZzfb2Q==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"mosen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/send-code-change-password",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"send-code-change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manage-password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX18nTgR3fddgDTGMrSyyLBa5NM+U4IBijq6jnZqVlt5Rf7+yRlZhjzvpMIK8STrspVEFbemfLQkJOzYkKIwMcS+h9cJu+OquEWrYaVuf5lNGSkHjAYOdzk+ec047XZ9x/nhpaw7kokL4bo/m3XZH1DrWm503qrqA4kuPDn9zHwBQIkyir6GbCnYNP5ZLUn8Jnknggy2xM/sShRD9wyuwRsM7XcfWFOP92lA8+tZQlce2CiXh9da9F/EiqqKfMgVakd9BmG7bl+Ce1RC4YH+mN+kxANOex8z8PqC0fC/9DRO8YFO6Tcfta2Ktygti014L/JVJIb+WWxIDNEB5cw5ncNt56w4fVT9FiZQquHw10Kb0xw4LDx9RgDgbI5QQIolIua7BBWfcINBn2P7Eq86N+4oLNplz9cMwqCElL6VvJtUbCsjamSqxGxfWQE4ymdydi2+M3xih1672OPoXcaySMuUTteLRNdkqYqt3/467f3jMCrgq8kuVAgR7jLU1wj+nBXrbejhKCUwtVpm4jNTDmtrbjqj5m2XN6PmF6d58NfBZjmkaE44Ox4fNJFVR7g79Z3WaNhhAfzrw8Z/EKX5s5lOJGrNLZWPJuYpM2vxWVQhULnBhtR6XQrF2cYIk5+16IgGNHunta5TYLUj2OJIBgsED0V6VD/p6IzTW7CxPImWpllUS9sKcjCEKWhqJHPULUhroQqUBvwX0HoXV/TyBhwIC9Wub606Gd8cP6OCaa0X3UEujhb0YqUmP9WreYjg684cFft8WZzfb2Q==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"userName\" : \"mosen\",\r\n     \"password\" : \"654321\",\r\n     \"code\" : \"521073\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/manage-password",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"manage-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-code-activation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile\":\"09913862027\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/send-code-activation",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"send-code-activation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validate-code-activation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile\":\"09913862027\",\r\n    \"code\":\"589111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/validate-code-activation",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"validate-code-activation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "submit-customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX19yGUUN/50509aJ/6UqJi2bB2y2z5T56dq2P8YsOme1XzBAhXnoox2THrFNoOASBOSFNaURhPvXjPRNlfKnGJlWblFCgWC87fnhdLTKnYm9aryXyuNa8jZD48ybiWufds3vaqnqm3HQk5RYVliBqZF2ssF8BIFI6yjBjmO1sMcPxCQMWTP238guJ3C5EF02VTcMtTfvlbPKtuUorjJnAkVeIvc1KEARMGVJnDZpbJyM1L09tm3YDjOsTy+a4Le18qZIacGSJdhnCV/A/DJ++UqzZR/mJo8BXfNvfYHyMPJdG5EEQfPvMqWABcMJOybqugZ4peX2VSjElluX9aK1q7kDpdGfsSQwnnYp9Q7a4xZND/r8MCqjFwrce9hWBQlxw33l3zqC/Az6C9Zli0m9aarsHbtTUKCjw/sB2Wr1zjYQoL664kgz5/9aeWrwHMvkxKz3bJzxOcWAqI2gwvGcg8LQlgTnFitC2WgpsOkjmrjUpDMSx+cWCkSNU6p00/dmPsT1wUuve6eFip7qizEd72/Dt1Vcjc97VDhkTEoRgRfMoRSsgdEu1P4d7kCFfLEDARTWHtE54S/2JHecDx+tlZSqH25YNoecNYCvCF+GVk9UnCsU9ZHQIb/UfjuRB6veapsSbkKxuGfg3ua6o+1sFMn5xiVUvPW7cPVLDVk/knzGRi4vdfVZClDmZkMQEcdlqMXbNZBarFFGvnDw9p2YIrwytyYgCzoovDfaySxwvMdB6D+E4J07odgTEonHvQgKDbzUXfFOHCBnqw==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "\"U2FsdGVkX1/ysJ/1Pej4YrIYuBsDIP16WRhVawuxsLzIJe3DJvZAbR/B4l7NyVgKZhKt4kWcf55C5W6l37/tVzLGHDLTeu9zv6sSUgCqMIOGMsBbT+eiS1piP1QimITmviNTBILWPfjMVeDm5o2T587xb1YYWYz368wYFkMxRgiMxA+5gzoG7SasMb7Jxdyu5KRLsmVBZznfguKm1V/+PBIg1364IQQN4jcBdqioTeb8jLoRB/wleG01eC7i2BWKvliMSuPNwgFuGILTwfTH4UkpHfpvZhQS1lZunnUzWpTyNFUtpT2GvuQKh/sw/APt4SGEjKNQDVkMBrLL6tNvWEVbtF7dUMD6JUDkz59TJ8WG125UgatU9mWbODqsJGVNX2K31hetLLZr6bq4TITqlh6WpJMTxLYI/LSOgwXGTpHQF45SEkcfh5LmaAH6dViisBkRmxNrPALBeIRtlai115CwqG8iGRJNQJzi4qSqjXqhgfE+jktlCAgnoK9xwyi8SwgrwEvq1k+LY4c6DmaPAjDqv+f1Q1ebT6K+VpmE91Q7sD9s4C0vOr9cNfgWv3cBv7eZeI3oMfVUPA5NI91HTFlAQzo3jn/u2wBo2iV1y7TT8TFGLTTjU+H7lcV8GrWi9/2Rl0PzyAbI3F3n2mucJZrI3+nU3c79w0mZQc+CXNM3O8dw6hrnWmRrjerpi0kW9LvrScsIUWKn0PwVb9y8+OyWcie+WokEzt8dfXKTj7Y+7bNMLXz/8XAGc2S/TMI13/0SS6vzOHDjZYXtXWpWew==\"",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"alireza\",\r\n    \"lastName\": \"fatahi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://digitalorder.ir/api/v1/submit-customer",
+							"protocol": "http",
+							"host": [
+								"digitalorder",
+								"ir"
+							],
+							"path": [
+								"api",
+								"v1",
+								"submit-customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

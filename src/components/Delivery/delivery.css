@@ -1,0 +1,56 @@
+.address {
+  display: flex;
+  justify-content: center;
+}
+.address p {
+  border-radius: 20px;
+  background-color: rgb(147, 225, 225);
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.addressdescription {
+  display: flex;
+  justify-content: center;
+}
+.addressdescription div {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px #a4c3b2;
+  padding: 5px;
+  max-width: 60%;
+}
+.mapdiv {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.mapdiv p {
+  border-radius: 20px;
+  background-color: rgb(237, 227, 178);
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.livemap {
+  display: flex;
+  justify-content: center;
+}
+.description {
+  display: flex;
+  justify-content: center;
+}
+.description p {
+  border-radius: 20px;
+  background-color: rgb(151, 244, 204);
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}

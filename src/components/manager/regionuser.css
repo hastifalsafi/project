@@ -1,0 +1,10 @@
+.inputTable {
+  /* margin-left: 10px; */
+  color: currentColor;
+  background: transparent;
+  width: 35%;
+  border: 3px solid #1d3557;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 5px;
+}

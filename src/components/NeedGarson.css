@@ -1,0 +1,102 @@
+.div1 {
+  font-size: larger;
+  padding-right: 20px;
+}
+.div2 {
+  font-size: larger;
+  margin-top: 30px;
+  padding-right: 20px;
+  /* height: 70%; */
+}
+/* .B1 {
+  background-color: rgb(211, 210, 210);
+  margin: 0px 20px 0px 20px;
+  padding: 0.4rem 0.75rem;
+  width: 90%;
+  border-radius: 15px;
+}
+.B2 {
+  background-color: rgb(213, 32, 32);
+  margin: 0px 20px 0px 20px;
+  padding: 0.4rem 0.75rem;
+  width: 90%;
+
+  border-radius: 15px;
+} */
+
+.card {
+  width: 65%;
+  height: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: 1px solid #a9a9a9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgb(235, 87, 116);
+  background-image: linear-gradient(#a9a9a9, rgb(255, 228, 225), #dcdcdc);
+}
+.card:after {
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(var(--rotate), red, black 43%, yellow);
+  animation: spin 2.5s linear infinite;
+}
+
+.needgarson {
+  display: flex;
+  justify-content: top;
+  font-size: 20px;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+}
+.status {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  width: 40%;
+  padding: 10px;
+  position: absolute;
+  /*box-shadow: 6px 4px 8px rgba(189, 85, 85, 0.5);*/
+  /*background-image: linear-gradient(#066e8b, #e3dd3c 43%, #bf00c2);*/
+  /*transform: scale(0.8);*/
+  /*background-image: linear-gradient(*/
+  /*  var(--rotate),*/
+  /*  rgb(251, 137, 137),*/
+  /*  rgb(169, 169, 254) 43%,*/
+  /*  rgb(183, 186, 181)*/
+  /*);*/
+  animation: spin 2.5s linear infinite;
+  border: none;
+  border-radius: 40px;
+}
+.fatherbutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+.B8 {
+  background-color: rgb(211, 210, 210);
+  width: 90%;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px rgba(132, 128, 128, 0.844);
+}
+.B7 {
+  background-color: rgb(242, 49, 49);
+  width: 90%;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px rgb(199, 10, 10);
+}
+@media (max-width: 768px) {
+  .card {
+    width: 85%;
+  }
+}
