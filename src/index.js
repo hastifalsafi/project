@@ -16,7 +16,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Provider store={store}>
         <Routes>
-          {/*<Route path="/managerweb" element={<Managerweb />} />*/}
+          <Route path="/managerweb" element={<Managerweb />} />
            <Route path="/garson" element={<Garson />} />
           <Route path="/" element={<App />} />
         </Routes>

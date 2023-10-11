@@ -7,10 +7,30 @@ import Close from "../close.png";
 import Garsonbutton from "./garsonbutton";
 import NeedGarson from "./Needgarson";
 import Delivery from "./Delivery/delivery";
+import Securitybutton from "./securitybutton";
+import Deliverybutton from "./deliverybutton";
+import Chefbutton from "./chefbutton";
 export function RenderRowbutton(props) {
   switch (props.role) {
     case "super-admin":
-      return <NeedGarson changeColor1={props.changeColor1} key={props.key} />;
+      return (
+        // <NeedGarson
+        //   changeColor1={props.changeColor1}
+        //   sefaresh3={props.sefaresh3}
+        //   idd={props.id}
+        // />
+        // <Securitybutton
+        //   changeColor1={props.changeColor1}
+        //   sefaresh3={props.sefaresh3}
+        //   idd={props.id}
+        // />
+        // <Chefbutton
+        //   changeColor1={props.changeColor1}
+        //   sefaresh3={props.sefaresh3}
+        //   idd={props.id}
+        // />
+        <></>
+      );
     default:
       return <div />;
   }
@@ -26,13 +46,14 @@ const Clickcardpagesefaresh = ({
   ispaid,
   role1,
   changeColor1,
-  key,
+  id,
 }) => {
   const [role, setRole] = useState({ role1 });
   function handleDeleteCard() {
     deletedetail();
     showsefareshatdiv();
   }
+  // console.log("key", key);
   useEffect(() => {
     // var role1 = localStorage.getItem("role");
     // switch (role1) {
@@ -59,12 +80,13 @@ const Clickcardpagesefaresh = ({
 
   return (
     <div>
-      {type === "Internal" ? (
+      {type === "need_garson" ? (
         <NeedGarson
           sefaresh2={sefaresh2.table}
           showsefareshatdiv={showsefareshatdiv}
           deletedetail={deletedetail}
-          key={key}
+          sefaresh3={sefaresh2._id}
+          changeColor1={changeColor1}
         />
       ) : type === "pickup" ? (
         <Delivery
@@ -74,7 +96,6 @@ const Clickcardpagesefaresh = ({
           deletedetail={deletedetail}
           showsefareshatdiv={showsefareshatdiv}
           ispaid={ispaid}
-          key={key}
         />
       ) : (
         <div
@@ -157,7 +178,24 @@ const Clickcardpagesefaresh = ({
               <RenderRowbutton
                 role={role1}
                 changeColor1={changeColor1}
-                key={key}
+                sefaresh3={sefaresh2}
+                id={id}
+              />
+              {/* <Securitybutton
+                sefaresh3={sefaresh2._id}
+                changeColor1={changeColor1}
+              /> */}
+              {/* <Deliverybutton
+                sefaresh3={sefaresh2._id}
+                changeColor1={changeColor1}
+              /> */}
+              {/* <Chefbutton
+                sefaresh3={sefaresh2._id}
+                changeColor1={changeColor1}
+              /> */}
+              <Securitybutton
+                sefaresh3={sefaresh2._id}
+                changeColor1={changeColor1}
               />
               {/* {role == "super-admin" ? <Garsonbutton /> : role=="garson" ? <AdminButton/> : } */}
             </Row>

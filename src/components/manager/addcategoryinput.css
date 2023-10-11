@@ -1,0 +1,61 @@
+.CNinput {
+  width: 30%;
+  justify-content: right;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+.CNinput__field {
+  display: flex;
+  color: currentColor;
+  background: transparent;
+  border-radius: var(--size-radius);
+  width: 100%;
+  border: 3px solid currentColor;
+  height: 40px;
+}
+.delete {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(15, 52, 185);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20%;
+  margin-right: 30%;
+  border: 2px solid #7d0404;
+  border-radius: 8px;
+  background: #e39696;
+}
+.add {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(15, 52, 185);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20%;
+  margin-right: 5%;
+  border: 2px solid #068993;
+  border-radius: 8px;
+  background: #92c6c9;
+}
+.add:hover {
+  background: #63b8bd;
+  color: #068993;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #0fccd6, 0 0 25px #04878e, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+.delete:hover {
+  background: #d45b43;
+  color: #068993;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f24949, 0 0 25px #e48a8a, 0 0 50px #dd5555,
+    0 0 100px #ffabab;
+}

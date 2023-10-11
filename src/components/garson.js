@@ -17,9 +17,9 @@ import { loadingtrue } from "../store";
 import { useDispatch, useSelector } from "react-redux";
 import { message, onClose } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import { LoginForm } from "./accountBox/loginForm";
 const Garson = () => {
-  const location = useLocation();
+  // const location = useLocation();
 
   const dispatch = useDispatch();
   const selector = useSelector((state) => state.loading);
@@ -37,19 +37,25 @@ const Garson = () => {
   // const [message, setmessage] = useState("");
   const [desktopview, setdesktopview] = useState(true);
   const [errormassege, setErrormassege] = useState(true);
+  // const accessToken = localStorage.getItem("accessToken");
+  let accessToken =
+    "U2FsdGVkX1/BqQbOhhjkTqf7/yOESZ7CX3pHL6Z0QS/Nh4vnTHDI6hLvpKk4fMJd2jxdsFqekUiBHQ2EPF86vz8GxY+UW1h8nFzv7WQj7g24s1E8en3leHD4/KJoftEmroyRe702PerqKPrdgyLq3kKCgRj/23nCMEhu1kHDaTaujGIDIYU6IYmzp7HxZWrHI7LRTEJ09YgLfWHjOtrDTqbTJHyFKVrm0vkAA6bjTcpZz/NDbS6j4Yxt6WJ8vDq0kluEcyD2kAorKI2QewUxh2SLMLLslo2bOocVxYZIXtOoj/Oz+rp34Plm+mb4vJOvTMIQoLTSQMkaTAUTI2if3waO9VgTTQbCyP7qiO0bi49dbw1DXXt5/avuj7JdmItUCbaaZl7ZVWt55W5oTO+rRoI/wKbuthsf5ZHmU3Sl/YGsEBm0JXS1wcirYpIApQQW66TwUFbgdIwJJRfQvXIy+YacFc78T/Y1JuoCdy9sKLKxIACJnugHEHdmmHShxRAJO4qM9fPfi/GogObxq5jWBwkMZ+02S8E5RBjIq7lWDc29irqQbMc2esAez8oE1Ti8sJ4sTYeJp5yNNDLvLkKj5aK1vYMevUpaJbW1Olk3np6g8tEARmAL4+dEAqllFPE+T/D1fhdWBTpdhfMDhOeRtM4o4Apwa7JFn0UdVMnc5+Njz1EVBqWdpOvktfuYfb/vvLcc/Z33um5L+l3+EbRq+qNfJYECZ9kSQRybsSvnFPUnOehCyAr59R++PKovE5mDvTNZAAlze7M+DoUT40SAZZ4mnO0sMdDm1jQzN4iu7WLUYaTIWAgCQxv5G1Z0Uu9U";
   const navigate = useNavigate();
   useEffect(() => {
     // getData();
-    if (location.state && location.state.role) {
-    } else {
-      navigate("/");
-    }
+    // if (location.state && location.state.role) {
+    // } else {
+    //   navigate("/");
+    // }
+    function acsess(accessToken) {}
     const interval = setInterval(getData, 1000);
+
     function handleResize() {
       if (window.innerWidth <= 768) {
         setmobile(true);
       } else setmobile(false);
     }
+
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => {
@@ -57,8 +63,6 @@ const Garson = () => {
       clearInterval(interval);
     };
   }, []);
-  let accessToken =
-    "U2FsdGVkX19P75ly3tjD2UhO5d+G8KYDzl5HolbKsAhtuTITuHL+K/r2j8eyVSiafccy1MmmzNC9ezEeVx222WXqsdRRC1y2q5LaBNFmcXUjQjt8gGHwEY6MayTkgST0ev8TVffS2rA4CoJfFnv6vSKU4mNXDKel287K7jTyQiHzoxNlch13L+7LMJqtCUzWNfzgoAIyykm6B5CXZrwlOl5gQwkwkJYueZgr1sLdxJyDHnpDq7DEVq4hpK481G8ThQBdYKqWn9brIgTUu5iB2fMClX9JdoiUVI7AwXfEWg54Zgg8XusnnWg0t35Z0grznHq2JmNpzKY7Ny0OlHVjqZ+MSbc4yeo/VIunXacPD/P5iC0Oqgc74/WuoMO68VWd4eD02v++uUMrx1xLs+AvOO1NW8/DhYM9Fa7oj4WVupIhQXxl3Ih+XevsaNULjQjGUGKCUGo/xUINuD1zphvDhho5ynrvFEvlI1NoDN4Za7Rj14D2UhMzKmqRwffa6UNhpQqXMRGAjAUJnbKqvMTd9BQqpBziu7E5zaJoAzniDCiQl/Ttdqc6Z+IW7TMjVVRgSWhLNgW3SKlL/4yb01QTv5YvrKkEaKM/3j0YMiBH0YqSunmqddM99YQq1TjJKH2yU332PsglXnV0VQWxg1GmcxbrsC2VwotJhAcP4YOZL607yBZ3HKfci8OxeKdpbRgakTENUy8KW0fs45tHO9Z99fgOtJtMv7IekOpLHucQAnHBt6s47T+02hBTEMH+HbylkJ0IDRqSk18Ik2cfj5hrcW5bivMZOOO8ipJ6AU4OuRlqSxY8cPNhczHk5aEQvVpD";
   const getData = () => {
     fetch("https://digitalorderback.iran.liara.run/api/v1/get-all-orders", {
       method: "GET",
@@ -237,9 +241,9 @@ const Garson = () => {
                       ispaid={sefaresh2.isPaid}
                       type={sefaresh2.type}
                       mobilee={mobilee}
-                      role1={location.state.role}
+                      // role1={location.state.role}
                       showsefareshatdiv={showsefareshatdiv}
-                      key={sefaresh2._id}
+                      id={sefaresh2.serialNumber}
                     />
                   </div>
                 ) : (

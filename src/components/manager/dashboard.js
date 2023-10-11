@@ -17,26 +17,7 @@ const Dashboard = (props) => {
   const addclientonclick = () => {
     dispatch(addclientredux({ type: Action_type.add_client }));
   };
-  const text = ` A dog is a type of domesticated animal. Known for its
-  loyalty and faithfulness, it can be found as a welcome guest in many
-  households across the world. `;
-  const items = [
-    {
-      key: "1",
-      label: "This is panel header 1",
-      children: <p>{text}</p>,
-    },
-    {
-      key: "2",
-      label: "This is panel header 2",
-      children: <p>{text}</p>,
-    },
-    {
-      key: "3",
-      label: "This is panel header 3",
-      children: <p>{text}</p>,
-    },
-  ];
+
   const { Panel } = Collapse;
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
@@ -73,8 +54,8 @@ const Dashboard = (props) => {
                   </i>
                   <i class="fas fa-home"> </i>
                   <Panel
-                      className="custom"
-                      header="کاربران"
+                    className="custom"
+                    header="کاربران"
                     key="1"
                     style={{ backgroundColor: "#f1faee" }}
                     bordered={false}
@@ -85,7 +66,7 @@ const Dashboard = (props) => {
                         width: "100%",
                         borderRadius: "5px",
                         // backgroundColor: "#f1faee",
-                        padding:"5px"
+                        padding: "5px",
                       }}
                     >
                       اضافه کردن کاربر
@@ -95,8 +76,7 @@ const Dashboard = (props) => {
                         width: "100%",
                         borderRadius: "5px",
                         // backgroundColor: "#f1faee",
-                        padding:"5px"
-
+                        padding: "5px",
                       }}
                     >
                       حذف کاربر{" "}
@@ -107,8 +87,7 @@ const Dashboard = (props) => {
                         borderRadius: "5px",
                         // backgroundColor: "#f1faee",
                         cursor: "pointer",
-                        padding:"5px"
-
+                        padding: "5px",
                       }}
                       onClick={() => {
                         props.myclick(0);
@@ -143,8 +122,8 @@ const Dashboard = (props) => {
                   </i>
                   <i class="fas fa-tachometer-alt"></i>
                   <Panel
-                      className="custom"
-                      header="انتخاب محدوده ی خدماتی کاربر"
+                    className="custom"
+                    header="انتخاب محدوده ی خدماتی کاربر"
                     key="1"
                     style={{ backgroundColor: "#f1faee" }}
                     bordered={false}
@@ -178,7 +157,6 @@ const Dashboard = (props) => {
               </a>
               <a class="dashboard-nav-item">
                 <Collapse
-
                   bordered={false}
                   border={false}
                   style={{
@@ -189,20 +167,19 @@ const Dashboard = (props) => {
                   expandIconPosition="right"
                 >
                   <Panel
-                      className="custom"
+                    className="custom"
                     header="  میز"
                     key="1"
                     bordered={false}
                     border={false}
                     arrow={"left"}
                   >
-
                     <div
                       style={{
                         width: "100%",
                         borderRadius: "5px",
                         cursor: "pointer",
-                          height:"100%" ,
+                        height: "100%",
                       }}
                       onClick={() => {
                         props.myclick(2);
@@ -218,12 +195,11 @@ const Dashboard = (props) => {
                         width: "100%",
                         borderRadius: "5px",
                         // backgroundColor: "#f1faee",
-                          height:"100%"
+                        height: "100%",
                       }}
                     >
                       حذف کردن میز
                     </div>
-
                   </Panel>
                 </Collapse>
               </a>
@@ -247,7 +223,7 @@ const Dashboard = (props) => {
                       {/*></img>*/}
                     </i>
                     <Panel
-                        className="custom"
+                      className="custom"
                       header="  دسته بندی"
                       key="1"
                       style={{ backgroundColor: "#f1faee" }}

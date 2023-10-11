@@ -1,6 +1,6 @@
 import "./Cardpagesefaresh.css";
 import Clickcardpagesefaresh from "./Clickcardpagesefaresh";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import Modal from "react-modal";
 // import Modalmobile from "./modal";
@@ -31,10 +31,22 @@ const Cardpagesefaresh = ({
       mobilee();
     }
   };
+  // useEffect(() => {
+  //   if (changeColor1 === "checked") {
+  //     document.getElementById("11").style.backgroundColor = "blue";
+  //   } else if (changeColor1 === "new_order") {
+  //     document.getElementById("11").style.backgroundColor = "orange";
+  //   } else if (changeColor1 === "ready") {
+  //     document.getElementById("11").style.backgroundColor = "blue";
+  //   } else {
+  //     document.getElementById("11").style.backgroundColor = "yellow";
+  //   }
+  // }, [changeColor1]);
   return (
     <div
       onClick={handleclick}
       className="maincard"
+      id="11"
       style={{
         width: "90%",
         height: "120px",
@@ -45,23 +57,24 @@ const Cardpagesefaresh = ({
         padding: "5px",
         backgroundColor:
           changeColor1 === "new_order"
-            ? "orange"
+            ? "#ed7434"
             : changeColor1 === "ready"
-            ? "white"
+            ? "#f3cf79"
             : changeColor1 === "sending"
-            ? "green"
-            : changeColor1 === "needGarson"
-            ? "brown"
+            ? "#118ab2"
             : changeColor1 === "checked"
-            ? "yellow"
+            ? "#a3b18a"
             : changeColor1 === "ended"
-            ? "red"
+            ? "white"
             : changeColor1 === "not_checked"
             ? "red"
-            : changeColor1 === "checked"
-            ? "white"
+            : changeColor1 === "delivered"
+            ? "#4fc0e8"
+            : changeColor1 === "canceled"
+            ? "#bf3545"
+            : changeColor1 === "needgarson"
+            ? "#e63946"
             : "",
-        // canceled
       }}
     >
       <div style={{ display: "flex" }}>

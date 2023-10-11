@@ -1,0 +1,33 @@
+.addcategorydiv {
+  margin-top: 20%;
+  background-color: #c7e3df;
+  width: 90%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 30px #99ccb0;
+  height: 90%;
+}
+.getallcategorydiv {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: pink;
+}
+
+.addcategory {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.addcategory :after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(73, 49, 255);
+}

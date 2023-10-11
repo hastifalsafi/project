@@ -8,23 +8,36 @@ import { Redirect } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Garson from "../garson";
 
+
+
 export function LoginForm(props) {
-  let accessToken =
-    "U2FsdGVkX19tdtYotLJoeIyt5QJwuBGDFIbi6n7o0/noXJ5AXmu0a6X368eXNtLF2kDCoWwv+Rze/f7Y/t14XlzpeHQDws96Fbggno6DX9iBn9Sy8UpzwK1H/7J8p3DxQy4cGa/cbuMsejMPPue8a75qWx3lkbuSg8V6tSxw2xAj5oSN0vOiHnipXimsmn2mo4hH5KuFaPsBwPvs+KUW8ee6Y/WqQk4bzgcJ5YtN2RoDLTafYNLDqtRU8TNC13SkksvacevIKQWfa5sK+dRlaJOzZ0/tHJti+TJxZc5rvU4P2SZn3HOkr597hM7kMH7cYQ+pmQZzVwp6fku9LNxmcauj+Nrb4kGqgsoOHKu9EhbpZ8MOTowMIaAQlhHcVgfJklrw34twfkKU0Ei2TFuA8uTFOIgD27/crlDgBhW0wS23kEg1fUrwTcpd/CmPjdiLOwPmBJ9l+RVJTjYSUFEv5ptpaF4u9GVZZVMdfyin2D0S6WCQHfuAF2XmoojAuHVcwpv08lmd2ex5AsvTdV1d0uUvFg8KyMqBUrnygJlFGF1sfoN9yutALvEGNfhCzCfwQRiV4VryIu2QRCQdlJeCUrhaa8jcCiEd/isLHFfwngLWTr8TzLP69zt1F8ZpG+Y+PIBKQVw+qc9Hl+F/CHPICqEMe316WZfK1n35UK8NRKdM3rqE5vTMm03WtppzmevgcOHRMKSo6bNHEEbfN1Vs2X5CBAHzmebrqILwdwd/MbWXCskpyBajT9QrmZHcvuUG8Z9W33LeGGdb5QRIvGiGqHAlc8+ng56Z3pLWPmZo6/ZqnJCD1nDIWkHFpiC3c4St";
-  const [user, setUser] = useState("");
+    const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [linkto, setlinkto] = useState(false);
   const baseurl = "https://digitalorderback.iran.liara.run/api/v1/login";
   const navigate = useNavigate();
+  const accessToken = localStorage.getItem("accessToken");
   useEffect(() => {
     getData();
   }, []);
   const Nego = (myRole) => {
-    return navigate("/garson", {
-      state: {
-        role: myRole,
-      },
-    });
+    switch (myRole) {
+          case "super-admin":
+      return navigate("/managerweb", {
+        state: {
+          role: myRole,
+          accessToken :myRole,
+        },
+      });
+      case  "garson":
+        return navigate("/garson", {
+          state: {
+            role: myRole,
+            accessToken :myRole,
+
+          },
+        });
+    }
   };
 
   const getData = () => {
